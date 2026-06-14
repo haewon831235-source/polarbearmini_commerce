@@ -15,6 +15,7 @@ export async function SiteHeader() {
     { href: "/shop", label: t("shop") },
     { href: "/campaigns", label: t("campaigns") },
     { href: "/tickets", label: t("tickets") },
+    { href: "/performances", label: t("performances") },
     { href: "/contact", label: t("contact") },
   ];
 

@@ -13,6 +13,7 @@
     "home": "Home",
     "shop": "Shop",
     "campaigns": "Campaigns",
+    "performances": "Performances",
     "tickets": "Tickets",
     "ticketsBadge": "Coming soon",
     "archive": "Archive",
@@ -56,6 +57,13 @@
     "cardTitle": "Ongoing Campaigns",
     "cardDesc": "Browse current events and campaigns on Acosta Korea.",
     "cardCta": "Visit"
+  },
+  "Performances": {
+    "title": "Performances",
+    "subtitle": "Archive of performances presented by Polaris Atelier Korea.",
+    "cardTitle": "Performance Archive",
+    "cardDesc": "Browse the records of all past performances.",
+    "cardCta": "View Archive"
   },
   "Tickets": {
     "subtitle": "Book your tickets for upcoming performances.",

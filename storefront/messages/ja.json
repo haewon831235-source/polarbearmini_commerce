@@ -13,6 +13,7 @@
     "home": "ホーム",
     "shop": "グッズ",
     "campaigns": "キャンペーン",
+    "performances": "公演",
     "tickets": "チケット",
     "ticketsBadge": "準備中",
     "archive": "アーカイブ",
@@ -56,6 +57,13 @@
     "cardTitle": "進行中のキャンペーン",
     "cardDesc": "アコスタコリアで開催中のイベントやキャンペーンをご覧ください。",
     "cardCta": "詳細を見る"
+  },
+  "Performances": {
+    "title": "公演",
+    "subtitle": "ポラリスアトリエコリアが手がけた公演アーカイブです。",
+    "cardTitle": "公演アーカイブ",
+    "cardDesc": "これまでの公演記録をご覧ください。",
+    "cardCta": "アーカイブを見る"
   },
   "Tickets": {
     "subtitle": "公演チケットを予約してください。",

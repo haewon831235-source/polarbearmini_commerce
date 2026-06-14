@@ -13,6 +13,7 @@
     "home": "홈",
     "shop": "굿즈",
     "campaigns": "캠페인",
+    "performances": "공연",
     "tickets": "티켓",
     "ticketsBadge": "준비중",
     "archive": "아카이브",
@@ -56,6 +57,13 @@
     "cardTitle": "진행 중인 캠페인",
     "cardDesc": "아코스타 코리아에서 진행 중인 이벤트와 캠페인을 확인해보세요.",
     "cardCta": "바로가기"
+  },
+  "Performances": {
+    "title": "공연",
+    "subtitle": "폴라리스 아틀리에 코리아가 함께한 공연 아카이브입니다.",
+    "cardTitle": "공연 아카이브",
+    "cardDesc": "지금까지 진행한 공연들의 기록을 확인하세요.",
+    "cardCta": "아카이브 보기"
   },
   "Tickets": {
     "subtitle": "공연 티켓을 예매하세요.",

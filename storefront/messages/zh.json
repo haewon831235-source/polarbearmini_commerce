@@ -13,6 +13,7 @@
     "home": "首页",
     "shop": "周边",
     "campaigns": "活动",
+    "performances": "演出",
     "tickets": "门票",
     "ticketsBadge": "敬请期待",
     "archive": "往期",
@@ -56,6 +57,13 @@
     "cardTitle": "进行中的活动",
     "cardDesc": "查看 Acosta Korea 上正在进行的活动与促销。",
     "cardCta": "前往查看"
+  },
+  "Performances": {
+    "title": "演出",
+    "subtitle": "Polaris Atelier Korea 参与制作的演出档案。",
+    "cardTitle": "演出档案",
+    "cardDesc": "查看历次演出的完整记录。",
+    "cardCta": "查看档案"
   },
   "Tickets": {
     "subtitle": "预订演出门票。",
