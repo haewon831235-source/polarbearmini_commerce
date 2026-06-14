@@ -37,6 +37,6 @@ cd storefront && npm run db:setup
 
 ## 하지 말 것
 
-- `_automation/`을 git add하지 말 것 — Gabia 로그인 세션 정보가 포함될 수 있음
+- `_automation/`의 스크립트에 Gabia 로그인 정보를 하드코딩하지 말 것 — 인증은 브라우저 세션에만 존재해야 함
 - `.env.local` 커밋 금지 (gitignore에 포함됨)
 - 기존 마이그레이션 파일 수정 금지 — 이미 운영 DB에 적용된 상태
