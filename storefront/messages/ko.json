@@ -12,6 +12,7 @@
   "Nav": {
     "home": "홈",
     "shop": "굿즈",
+    "campaigns": "캠페인",
     "tickets": "티켓",
     "ticketsBadge": "준비중",
     "archive": "아카이브",
@@ -48,6 +49,10 @@
     "terms": "이용약관",
     "privacy": "개인정보처리방침",
     "refund": "취소 및 환불 정책"
+  },
+  "Campaigns": {
+    "title": "캠페인",
+    "subtitle": "현재 진행 중인 캠페인과 이벤트를 확인하세요."
   },
   "Legal": {
     "termsTitle": "이용약관",

@@ -12,6 +12,7 @@
   "Nav": {
     "home": "ホーム",
     "shop": "グッズ",
+    "campaigns": "キャンペーン",
     "tickets": "チケット",
     "ticketsBadge": "準備中",
     "archive": "アーカイブ",
@@ -48,6 +49,10 @@
     "terms": "利用規約",
     "privacy": "プライバシーポリシー",
     "refund": "キャンセル・返金ポリシー"
+  },
+  "Campaigns": {
+    "title": "キャンペーン",
+    "subtitle": "現在進行中のキャンペーンとイベントをご確認ください。"
   },
   "Legal": {
     "termsTitle": "利用規約",

@@ -12,6 +12,7 @@ export async function SiteHeader() {
   const links = [
     { href: "/", label: t("home") },
     { href: "/shop", label: t("shop") },
+    { href: "/campaigns", label: t("campaigns") },
     { href: "/tickets", label: t("tickets"), badge: t("ticketsBadge") },
     { href: "/contact", label: t("contact") },
   ];

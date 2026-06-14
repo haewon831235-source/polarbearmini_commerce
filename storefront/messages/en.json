@@ -12,6 +12,7 @@
   "Nav": {
     "home": "Home",
     "shop": "Shop",
+    "campaigns": "Campaigns",
     "tickets": "Tickets",
     "ticketsBadge": "Coming soon",
     "archive": "Archive",
@@ -48,6 +49,10 @@
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
     "refund": "Cancellation & Refund Policy"
+  },
+  "Campaigns": {
+    "title": "Campaigns",
+    "subtitle": "Check out our current campaigns and events."
   },
   "Legal": {
     "termsTitle": "Terms of Service",

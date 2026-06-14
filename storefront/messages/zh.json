@@ -12,6 +12,7 @@
   "Nav": {
     "home": "首页",
     "shop": "周边",
+    "campaigns": "活动",
     "tickets": "门票",
     "ticketsBadge": "敬请期待",
     "archive": "往期",
@@ -48,6 +49,10 @@
     "terms": "服务条款",
     "privacy": "隐私政策",
     "refund": "取消与退款政策"
+  },
+  "Campaigns": {
+    "title": "活动",
+    "subtitle": "查看当前正在进行的活动与促销。"
   },
   "Legal": {
     "termsTitle": "服务条款",
