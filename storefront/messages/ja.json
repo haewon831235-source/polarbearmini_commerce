@@ -1,0 +1,97 @@
+{
+  "Brand": {
+    "name": "Polaris Atelier",
+    "tagline": "世界のIPを、舞台の上へ"
+  },
+  "LocaleNames": {
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文"
+  },
+  "Nav": {
+    "home": "ホーム",
+    "shop": "グッズ",
+    "tickets": "チケット",
+    "ticketsBadge": "準備中",
+    "archive": "アーカイブ",
+    "contact": "お問い合わせ",
+    "cart": "カート",
+    "account": "マイページ",
+    "language": "言語",
+    "currency": "通貨"
+  },
+  "Home": {
+    "heroTitle": "世界のIPを、私たちが舞台へ",
+    "heroSubtitle": "アニメ・ゲーム・ミュージカルIP公演の公式グッズとチケットを一つの場所で。",
+    "heroCta": "グッズを見る",
+    "heroCtaTickets": "公演スケジュール",
+    "featuredTitle": "新着グッズ",
+    "featuredEmpty": "まもなく商品が公開されます。",
+    "ipTitle": "これまでのIP実績",
+    "ipSubtitle": "正規ライセンスで制作した公演リファレンス"
+  },
+  "Footer": {
+    "companyLabel": "会社名",
+    "company": "株式会社 ポラリスアトリエコリア",
+    "ceoLabel": "代表",
+    "ceo": "イ・ヘウォン",
+    "bizNumberLabel": "事業者登録番号",
+    "bizNumber": "769-88-03948",
+    "mailOrderLabel": "通信販売業申告番号",
+    "mailOrder": "申告予定",
+    "addressLabel": "住所",
+    "address": "ソウル特別市 鍾路区 梨花荘ギル32-1 6階",
+    "contactLabel": "お問い合わせ",
+    "contact": "polarbearmini@naver.com",
+    "rights": "© 2026 H&H Company. All rights reserved.",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "refund": "キャンセル・返金ポリシー"
+  },
+  "Legal": {
+    "termsTitle": "利用規約",
+    "privacyTitle": "プライバシーポリシー",
+    "refundTitle": "キャンセル・返金ポリシー",
+    "placeholder": "本書類は準備中です。正式オープン前に法務確認を経て掲載されます。"
+  },
+  "Product": {
+    "addToCart": "カートに入れる",
+    "soldOut": "売り切れ",
+    "selectOption": "オプションを選択",
+    "quantity": "数量",
+    "added": "追加しました ✓",
+    "comingSoon": "購入機能は準備中",
+    "comingSoonHint": "オンライン購入はまもなく開始します。お問い合わせは下記までお願いします。"
+  },
+  "Cart": {
+    "title": "カート",
+    "empty": "カートは空です。",
+    "subtotal": "小計",
+    "checkout": "購入手続きへ",
+    "remove": "削除"
+  },
+  "Checkout": {
+    "title": "注文・決済",
+    "orderSummary": "注文内容",
+    "total": "お支払い合計",
+    "paymentSection": "決済方法",
+    "methodToss": "トスペイ",
+    "methodKakao": "カカオペイ",
+    "methodNaver": "ネイバーペイ",
+    "methodCard": "クレジット・デビットカード",
+    "name": "お名前",
+    "email": "メール",
+    "phone": "電話番号",
+    "pay": "決済する",
+    "processing": "決済処理中…",
+    "payError": "決済に失敗しました。もう一度お試しください。",
+    "pendingNote": "決済連携を準備中です。PortOne（トス・カカオ・ネイバー）テスト連携後に決済が有効になります。"
+  },
+  "Complete": {
+    "title": "ご注文が完了しました",
+    "thanks": "ご注文ありがとうございます。確認メールをお送りします。",
+    "orderNo": "注文番号",
+    "backToShop": "買い物を続ける"
+  }
+}

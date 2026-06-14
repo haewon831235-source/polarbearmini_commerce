@@ -1,0 +1,97 @@
+{
+  "Brand": {
+    "name": "Polaris Atelier",
+    "tagline": "World-class IP, brought to the stage"
+  },
+  "LocaleNames": {
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文"
+  },
+  "Nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "tickets": "Tickets",
+    "ticketsBadge": "Coming soon",
+    "archive": "Archive",
+    "contact": "Contact",
+    "cart": "Cart",
+    "account": "Account",
+    "language": "Language",
+    "currency": "Currency"
+  },
+  "Home": {
+    "heroTitle": "World-class IP, staged by us",
+    "heroSubtitle": "Official goods and tickets for anime, game, and musical IP performances — all in one place.",
+    "heroCta": "Shop goods",
+    "heroCtaTickets": "See show schedule",
+    "featuredTitle": "New arrivals",
+    "featuredEmpty": "Products are coming soon.",
+    "ipTitle": "IP we've worked with",
+    "ipSubtitle": "Officially licensed performance references"
+  },
+  "Footer": {
+    "companyLabel": "Company",
+    "company": "Polaris Atelier Korea, Inc.",
+    "ceoLabel": "CEO",
+    "ceo": "Hyewon Lee",
+    "bizNumberLabel": "Business reg. no.",
+    "bizNumber": "769-88-03948",
+    "mailOrderLabel": "Mail-order reg. no.",
+    "mailOrder": "Registration pending",
+    "addressLabel": "Address",
+    "address": "6F, 32-1 Ihwajang-gil, Jongno-gu, Seoul, South Korea",
+    "contactLabel": "Support",
+    "contact": "polarbearmini@naver.com",
+    "rights": "© 2026 H&H Company. All rights reserved.",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "refund": "Cancellation & Refund Policy"
+  },
+  "Legal": {
+    "termsTitle": "Terms of Service",
+    "privacyTitle": "Privacy Policy",
+    "refundTitle": "Cancellation & Refund Policy",
+    "placeholder": "This document is being prepared. It will be published after legal review prior to launch."
+  },
+  "Product": {
+    "addToCart": "Add to cart",
+    "soldOut": "Sold out",
+    "selectOption": "Select option",
+    "quantity": "Quantity",
+    "added": "Added ✓",
+    "comingSoon": "Purchases coming soon",
+    "comingSoonHint": "Online checkout opens soon. For now, please reach us at the contact below."
+  },
+  "Cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty.",
+    "subtotal": "Subtotal",
+    "checkout": "Checkout",
+    "remove": "Remove"
+  },
+  "Checkout": {
+    "title": "Checkout",
+    "orderSummary": "Order summary",
+    "total": "Total",
+    "paymentSection": "Payment method",
+    "methodToss": "Toss Pay",
+    "methodKakao": "KakaoPay",
+    "methodNaver": "NaverPay",
+    "methodCard": "Credit/Debit card",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "pay": "Pay",
+    "processing": "Processing…",
+    "payError": "Payment failed. Please try again.",
+    "pendingNote": "Payment integration is in progress. Checkout will be enabled after PortOne (Toss/Kakao/Naver) test integration."
+  },
+  "Complete": {
+    "title": "Order complete",
+    "thanks": "Thank you for your order. A confirmation email is on its way.",
+    "orderNo": "Order number",
+    "backToShop": "Continue shopping"
+  }
+}

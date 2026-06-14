@@ -1,0 +1,97 @@
+{
+  "Brand": {
+    "name": "Polaris Atelier",
+    "tagline": "将世界的IP搬上舞台"
+  },
+  "LocaleNames": {
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文"
+  },
+  "Nav": {
+    "home": "首页",
+    "shop": "周边",
+    "tickets": "门票",
+    "ticketsBadge": "敬请期待",
+    "archive": "往期",
+    "contact": "联系我们",
+    "cart": "购物车",
+    "account": "我的",
+    "language": "语言",
+    "currency": "货币"
+  },
+  "Home": {
+    "heroTitle": "世界的IP，由我们搬上舞台",
+    "heroSubtitle": "动漫、游戏、音乐剧IP演出的官方周边与门票，尽在一处。",
+    "heroCta": "选购周边",
+    "heroCtaTickets": "查看演出日程",
+    "featuredTitle": "新品上架",
+    "featuredEmpty": "商品即将上线。",
+    "ipTitle": "合作过的IP",
+    "ipSubtitle": "正版授权制作的演出案例"
+  },
+  "Footer": {
+    "companyLabel": "公司",
+    "company": "Polaris Atelier Korea 株式会社",
+    "ceoLabel": "代表",
+    "ceo": "李慧媛",
+    "bizNumberLabel": "营业执照号",
+    "bizNumber": "769-88-03948",
+    "mailOrderLabel": "通信销售业申报号",
+    "mailOrder": "申报中",
+    "addressLabel": "地址",
+    "address": "韩国首尔特别市钟路区梨花庄路32-1 6层",
+    "contactLabel": "客服",
+    "contact": "polarbearmini@naver.com",
+    "rights": "© 2026 H&H Company. 版权所有。",
+    "terms": "服务条款",
+    "privacy": "隐私政策",
+    "refund": "取消与退款政策"
+  },
+  "Legal": {
+    "termsTitle": "服务条款",
+    "privacyTitle": "隐私政策",
+    "refundTitle": "取消与退款政策",
+    "placeholder": "本文件正在准备中，将于正式上线前经法务审核后发布。"
+  },
+  "Product": {
+    "addToCart": "加入购物车",
+    "soldOut": "售罄",
+    "selectOption": "选择规格",
+    "quantity": "数量",
+    "added": "已加入 ✓",
+    "comingSoon": "购买功能即将上线",
+    "comingSoonHint": "在线购买即将开放。如有需要，请通过下方联系方式与我们联系。"
+  },
+  "Cart": {
+    "title": "购物车",
+    "empty": "购物车是空的。",
+    "subtotal": "小计",
+    "checkout": "去结算",
+    "remove": "删除"
+  },
+  "Checkout": {
+    "title": "订单/结算",
+    "orderSummary": "订单摘要",
+    "total": "应付总额",
+    "paymentSection": "支付方式",
+    "methodToss": "Toss Pay",
+    "methodKakao": "KakaoPay",
+    "methodNaver": "NaverPay",
+    "methodCard": "信用卡/借记卡",
+    "name": "姓名",
+    "email": "邮箱",
+    "phone": "联系电话",
+    "pay": "去支付",
+    "processing": "支付处理中…",
+    "payError": "支付失败，请重试。",
+    "pendingNote": "支付对接正在准备中。PortOne（Toss/Kakao/Naver）测试对接完成后即可结算。"
+  },
+  "Complete": {
+    "title": "下单完成",
+    "thanks": "感谢您的订购，确认邮件即将送达。",
+    "orderNo": "订单编号",
+    "backToShop": "继续购物"
+  }
+}
