@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { LocaleSwitcher } from "@/components/locale-switcher";
+import { MobileNav } from "@/components/mobile-nav";
 import { getCartCount } from "@/lib/cart/service";
 
 // Top navigation. Tickets is shown but flagged "coming soon" (phase 2).
@@ -43,7 +44,7 @@ export async function SiteHeader() {
           <LocaleSwitcher />
           <Link
             href="/cart"
-            className="relative text-sm font-medium text-muted-foreground hover:text-foreground"
+            className="relative hidden text-sm font-medium text-muted-foreground hover:text-foreground md:inline-flex"
           >
             {t("cart")}
             {cartCount > 0 ? (
@@ -52,6 +53,7 @@ export async function SiteHeader() {
               </span>
             ) : null}
           </Link>
+          <MobileNav links={links} cartLabel={t("cart")} cartCount={cartCount} />
         </div>
       </div>
     </header>
