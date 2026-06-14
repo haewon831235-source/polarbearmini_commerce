@@ -34,11 +34,6 @@ export async function SiteHeader() {
               className="relative text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.label}
-              {link.badge ? (
-                <span className="ml-1 rounded-full bg-muted px-1.5 py-0.5 text-[10px] text-muted-foreground">
-                  {link.badge}
-                </span>
-              ) : null}
             </Link>
           ))}
         </nav>
