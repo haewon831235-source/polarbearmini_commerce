@@ -43,12 +43,6 @@ export default async function HomePage({
           <Link href="/shop" className={buttonVariants({ size: "lg" })}>
             {t("heroCta")}
           </Link>
-          <Link
-            href="/tickets"
-            className={buttonVariants({ size: "lg", variant: "outline" })}
-          >
-            {t("heroCtaTickets")}
-          </Link>
           <a
             href="https://star.polarisatelierkorea.com/mypage"
             className={buttonVariants({ size: "lg", variant: "outline" })}
