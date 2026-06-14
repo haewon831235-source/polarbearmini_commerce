@@ -14,7 +14,7 @@ export async function SiteHeader() {
     { href: "/", label: t("home") },
     { href: "/shop", label: t("shop") },
     { href: "/campaigns", label: t("campaigns") },
-    { href: "/tickets", label: t("tickets"), badge: t("ticketsBadge") },
+    { href: "/tickets", label: t("tickets") },
     { href: "/contact", label: t("contact") },
   ];
 
