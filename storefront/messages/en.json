@@ -52,7 +52,16 @@
   },
   "Campaigns": {
     "title": "Campaigns",
-    "subtitle": "Check out our current campaigns and events."
+    "subtitle": "Check out our current campaigns and events.",
+    "cardTitle": "Ongoing Campaigns",
+    "cardDesc": "Browse current events and campaigns on Acosta Korea.",
+    "cardCta": "Visit"
+  },
+  "Tickets": {
+    "subtitle": "Book your tickets for upcoming performances.",
+    "cardTitle": "Performance Ticket Booking",
+    "cardDesc": "Purchase tickets for current performances on Yanolja.",
+    "cardCta": "Book Tickets"
   },
   "Legal": {
     "termsTitle": "Terms of Service",

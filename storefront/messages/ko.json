@@ -52,7 +52,16 @@
   },
   "Campaigns": {
     "title": "캠페인",
-    "subtitle": "현재 진행 중인 캠페인과 이벤트를 확인하세요."
+    "subtitle": "현재 진행 중인 캠페인과 이벤트를 확인하세요.",
+    "cardTitle": "진행 중인 캠페인",
+    "cardDesc": "아코스타 코리아에서 진행 중인 이벤트와 캠페인을 확인해보세요.",
+    "cardCta": "바로가기"
+  },
+  "Tickets": {
+    "subtitle": "공연 티켓을 예매하세요.",
+    "cardTitle": "공연 티켓 예매",
+    "cardDesc": "야놀자에서 현재 판매 중인 공연 티켓을 예매할 수 있습니다.",
+    "cardCta": "티켓 예매하기"
   },
   "Legal": {
     "termsTitle": "이용약관",

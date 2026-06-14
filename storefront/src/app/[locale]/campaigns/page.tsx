@@ -12,12 +12,24 @@ export default async function CampaignsPage({
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
       <h1 className="mb-2 text-3xl font-bold tracking-tight">{t("title")}</h1>
-      <p className="mb-6 text-muted-foreground">{t("subtitle")}</p>
-      <iframe
-        src="https://acosta-korea.co.kr/board/product/list.html?board_no=4&category_no=1"
-        className="h-[80vh] w-full rounded-lg border border-border"
-        title={t("title")}
-      />
+      <p className="mb-8 text-muted-foreground">{t("subtitle")}</p>
+
+      <a
+        href="https://acosta-korea.co.kr/board/product/list.html?board_no=4&category_no=1"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex flex-col gap-4 rounded-xl border border-border bg-muted/30 p-8 transition-colors hover:bg-muted/60"
+      >
+        <div className="flex items-center justify-between">
+          <div>
+            <h2 className="text-xl font-semibold">{t("cardTitle")}</h2>
+            <p className="mt-1 text-sm text-muted-foreground">{t("cardDesc")}</p>
+          </div>
+          <span className="rounded-lg border border-border bg-background px-4 py-2 text-sm font-medium transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+            {t("cardCta")} →
+          </span>
+        </div>
+      </a>
     </div>
   );
 }

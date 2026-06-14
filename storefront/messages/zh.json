@@ -52,7 +52,16 @@
   },
   "Campaigns": {
     "title": "活动",
-    "subtitle": "查看当前正在进行的活动与促销。"
+    "subtitle": "查看当前正在进行的活动与促销。",
+    "cardTitle": "进行中的活动",
+    "cardDesc": "查看 Acosta Korea 上正在进行的活动与促销。",
+    "cardCta": "前往查看"
+  },
+  "Tickets": {
+    "subtitle": "预订演出门票。",
+    "cardTitle": "演出门票预订",
+    "cardDesc": "在 Yanolja 上购买当前在售的演出门票。",
+    "cardCta": "立即预订"
   },
   "Legal": {
     "termsTitle": "服务条款",
