@@ -9,8 +9,8 @@ H&H Company IP(폴라베어미니 등) 굿즈 글로벌 커머스 플랫폼.
 |----------|------|
 | `storefront/` | Next.js 16 프론트엔드 (메인 앱) |
 | `supabase/` | DB 스키마 마이그레이션 및 시드 데이터 |
-| `_automation/` | Gabia DNS 관리용 Chrome CDP 스크립트 — **git 미추적, 로컬에만 존재** |
-| `_screenshots/` | 작업 중 캡처 스크린샷 — git 미추적 |
+| `_automation/` | Gabia DNS 관리용 Chrome CDP 스크립트 |
+| `_screenshots/` | 작업 중 캡처 스크린샷 |
 
 앱 코드 작업은 `storefront/`로 이동해서 `storefront/CLAUDE.md`를 읽을 것.
 
