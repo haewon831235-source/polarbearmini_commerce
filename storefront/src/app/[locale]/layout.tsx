@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { siteUrl } from "@/lib/site";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { PostHogProvider } from "@/components/posthog-provider";
 import "../globals.css";
 
 // Latin UI font; CJK glyphs (ko/ja/zh) fall back to system fonts for now.
@@ -53,11 +54,13 @@ export default async function LocaleLayout({
       className={`${geistSans.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
-        <NextIntlClientProvider>
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
-        </NextIntlClientProvider>
+        <PostHogProvider>
+          <NextIntlClientProvider>
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
+          </NextIntlClientProvider>
+        </PostHogProvider>
       </body>
     </html>
   );
