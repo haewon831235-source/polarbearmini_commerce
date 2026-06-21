@@ -118,5 +118,22 @@
     "thanks": "感谢您的订购，确认邮件即将送达。",
     "orderNo": "订单编号",
     "backToShop": "继续购物"
+  },
+  "Voice": {
+    "open": "语音提问",
+    "title": "语音购物助手",
+    "listening": "正在聆听…",
+    "prompt": "点击麦克风后说话。例如：「有什么周边？」",
+    "unsupported": "此浏览器不支持语音识别，请使用 Chrome。",
+    "you": "你",
+    "assistant": "助手",
+    "greeting": "你好！我是 Polaris Atelier 语音助手。你想了解哪款周边？",
+    "help": "我可以用语音告诉你商品列表、价格和商品介绍。试试问「有什么商品？」或「亚克力立牌多少钱？」",
+    "listIntro": "目前有 {count} 款周边：{names}。",
+    "priceAnswer": "{name} 的价格是 {price}。",
+    "infoAnswer": "{name}。{subtitle} 价格是 {price}。",
+    "notFound": "没有找到该商品，请换个名称再说一次。",
+    "fallback": "抱歉，没听清。请这样问：「有什么周边？」",
+    "priceNA": "暂无价格信息"
   }
 }

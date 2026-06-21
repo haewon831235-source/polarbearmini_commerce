@@ -118,5 +118,22 @@
     "thanks": "Thank you for your order. A confirmation email is on its way.",
     "orderNo": "Order number",
     "backToShop": "Continue shopping"
+  },
+  "Voice": {
+    "open": "Ask by voice",
+    "title": "Voice shopping helper",
+    "listening": "Listening…",
+    "prompt": "Tap the mic and speak. Try: \"What goods do you have?\"",
+    "unsupported": "This browser doesn't support speech recognition. Please use Chrome.",
+    "you": "You",
+    "assistant": "Helper",
+    "greeting": "Hi! I'm the Polaris Atelier voice helper. What goods are you curious about?",
+    "help": "I can tell you the product list, prices, and descriptions by voice. Try \"What products do you have?\" or \"How much is the acrylic stand?\"",
+    "listIntro": "We currently have {count} goods: {names}.",
+    "priceAnswer": "{name} costs {price}.",
+    "infoAnswer": "{name}. {subtitle} It costs {price}.",
+    "notFound": "I couldn't find that product. Please say the name again.",
+    "fallback": "Sorry, I didn't catch that. Try asking \"What goods do you have?\"",
+    "priceNA": "Price unavailable"
   }
 }
