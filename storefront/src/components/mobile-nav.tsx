@@ -5,10 +5,11 @@ import { Link } from "@/i18n/navigation";
 
 type NavLink = { href: string; label: string; badge?: boolean };
 
-export function MobileNav({ links, cartLabel, cartCount }: {
+export function MobileNav({ links, cartLabel, cartCount, liveLabel }: {
   links: NavLink[];
   cartLabel: string;
   cartCount: number;
+  liveLabel: string;
 }) {
   const [open, setOpen] = useState(false);
 
@@ -50,7 +51,7 @@ export function MobileNav({ links, cartLabel, cartCount }: {
                       <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
                       <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-red-500" />
                     </span>
-                    <span className="animate-pulse text-[10px] font-medium text-red-500">진행중</span>
+                    <span className="animate-pulse text-[10px] font-medium text-red-500">{liveLabel}</span>
                   </span>
                 )}
               </Link>

@@ -42,7 +42,7 @@ export async function SiteHeader() {
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
                     <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-red-500" />
                   </span>
-                  <span className="animate-pulse text-[10px] font-medium text-red-500">진행중</span>
+                  <span className="animate-pulse text-[10px] font-medium text-red-500">{t("live")}</span>
                 </span>
               )}
             </Link>
@@ -62,7 +62,7 @@ export async function SiteHeader() {
               </span>
             ) : null}
           </Link>
-          <MobileNav links={links} cartLabel={t("cart")} cartCount={cartCount} />
+          <MobileNav links={links} cartLabel={t("cart")} cartCount={cartCount} liveLabel={t("live")} />
         </div>
       </div>
     </header>

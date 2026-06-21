@@ -25,6 +25,7 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Home");
+  const tNav = await getTranslations("Nav");
 
   const currency = localeCurrency[locale as Locale];
   const featured = (await commerce.listProducts({ locale, currency })).slice(0, 4);
@@ -47,13 +48,13 @@ export default async function HomePage({
             href="https://star.polarisatelierkorea.com/mypage"
             className={buttonVariants({ size: "lg", variant: "outline" })}
           >
-            ⭐ 별자리 마이페이지
+            {tNav("starMypage")}
             <span className="ml-2 flex items-center gap-1">
               <span className="relative flex h-1.5 w-1.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
                 <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-red-500" />
               </span>
-              <span className="animate-pulse text-[10px] font-medium text-red-500">진행중</span>
+              <span className="animate-pulse text-[10px] font-medium text-red-500">{tNav("live")}</span>
             </span>
           </a>
         </div>
