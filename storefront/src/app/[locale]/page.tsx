@@ -48,6 +48,13 @@ export default async function HomePage({
             className={buttonVariants({ size: "lg", variant: "outline" })}
           >
             ⭐ 별자리 마이페이지
+            <span className="ml-2 flex items-center gap-1">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-red-500" />
+              </span>
+              <span className="animate-pulse text-[10px] font-medium text-red-500">진행중</span>
+            </span>
           </a>
         </div>
       </section>
