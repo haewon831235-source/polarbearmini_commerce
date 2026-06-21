@@ -3,6 +3,7 @@
 import { getCart } from "@/lib/cart/service";
 import { writeCartCookie } from "@/lib/cart/cookie";
 import { getPortoneApiSecret } from "./portone";
+import { recordPaymentOutcome } from "./record";
 import { localeCurrency, type Locale } from "@/i18n/routing";
 
 export type VerifyResult =
@@ -17,12 +18,21 @@ export async function verifyAndFinalizePayment(input: {
   locale: string;
 }): Promise<VerifyResult> {
   const secret = getPortoneApiSecret();
+  // PortOne disabled: behave exactly as before, record nothing (no attempt
+  // actually happened).
   if (!secret) return { ok: false, reason: "not-configured" };
 
   const currency = localeCurrency[input.locale as Locale];
   const cart = await getCart({ locale: input.locale, currency });
   const expected = cart.subtotal.amountMinor;
-  if (expected <= 0) return { ok: false, reason: "empty-cart" };
+  if (expected <= 0) {
+    await recordPaymentOutcome({
+      paymentId: input.paymentId,
+      status: "error",
+      errorReason: "empty-cart",
+    });
+    return { ok: false, reason: "empty-cart" };
+  }
 
   let payment: {
     status?: string;
@@ -34,17 +44,40 @@ export async function verifyAndFinalizePayment(input: {
       `https://api.portone.io/payments/${encodeURIComponent(input.paymentId)}`,
       { headers: { Authorization: `PortOne ${secret}` }, cache: "no-store" },
     );
-    if (!res.ok) return { ok: false, reason: "lookup-failed" };
+    if (!res.ok) {
+      await recordPaymentOutcome({
+        paymentId: input.paymentId,
+        status: "failed",
+        errorReason: "lookup-failed",
+      });
+      return { ok: false, reason: "lookup-failed" };
+    }
     payment = await res.json();
   } catch {
+    await recordPaymentOutcome({
+      paymentId: input.paymentId,
+      status: "error",
+      errorReason: "lookup-error",
+    });
     return { ok: false, reason: "lookup-error" };
   }
 
   const paid = payment?.amount?.total;
   const status = payment?.status;
   if (status === "PAID" && paid === expected) {
+    await recordPaymentOutcome({
+      paymentId: input.paymentId,
+      status: "paid",
+      pgStatus: status,
+    });
     await writeCartCookie([]); // order placed → empty the cart
     return { ok: true, paymentId: input.paymentId, amount: paid };
   }
+  await recordPaymentOutcome({
+    paymentId: input.paymentId,
+    status: "failed",
+    errorReason: "verification-failed",
+    pgStatus: status,
+  });
   return { ok: false, reason: "verification-failed", status };
 }

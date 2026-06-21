@@ -4,6 +4,10 @@ import { useState, useTransition } from "react";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
 import { verifyAndFinalizePayment } from "@/lib/payment/verify";
+import {
+  recordPaymentStarted,
+  recordPaymentOutcome,
+} from "@/lib/payment/record";
 
 export function PortonePayButton({
   storeId,
@@ -33,6 +37,16 @@ export function PortonePayButton({
     // Unique payment id per attempt (PortOne requirement).
     const paymentId = `order-${crypto.randomUUID()}`;
 
+    // Log the attempt (best-effort; server re-reads the cart for the snapshot).
+    void recordPaymentStarted({
+      paymentId,
+      locale,
+      orderName,
+      customerName: name || undefined,
+      customerEmail: email || undefined,
+      customerPhone: phone || undefined,
+    });
+
     let response;
     try {
       // Loaded lazily (browser-only SDK).
@@ -54,12 +68,22 @@ export function PortonePayButton({
         },
       });
     } catch (e) {
+      void recordPaymentOutcome({
+        paymentId,
+        status: "error",
+        errorReason: "sdk-failure",
+      });
       setError(e instanceof Error ? e.message : String(e));
       return;
     }
 
     // A non-empty `code` means the payment failed or was cancelled.
     if (response?.code != null) {
+      void recordPaymentOutcome({
+        paymentId,
+        status: "failed",
+        errorReason: "sdk-cancel",
+      });
       setError(response.message ?? t("payError"));
       return;
     }
