@@ -14,8 +14,8 @@ export async function SiteHeader() {
   const links = [
     { href: "/", label: t("home") },
     { href: "/shop", label: t("shop") },
-    { href: "/campaigns", label: t("campaigns") },
-    { href: "/tickets", label: t("tickets") },
+    { href: "/campaigns", label: t("campaigns"), badge: true },
+    { href: "/tickets", label: t("tickets"), badge: true },
     { href: "/performances", label: t("performances") },
     { href: "/contact", label: t("contact") },
   ];
@@ -33,9 +33,18 @@ export async function SiteHeader() {
             <Link
               key={link.href}
               href={link.href}
-              className="relative text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="relative flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.label}
+              {link.badge && (
+                <span className="flex items-center gap-1">
+                  <span className="relative flex h-1.5 w-1.5">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
+                    <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-red-500" />
+                  </span>
+                  <span className="animate-pulse text-[10px] font-medium text-red-500">진행중</span>
+                </span>
+              )}
             </Link>
           ))}
         </nav>

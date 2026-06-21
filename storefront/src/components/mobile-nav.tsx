@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Link } from "@/i18n/navigation";
 
-type NavLink = { href: string; label: string };
+type NavLink = { href: string; label: string; badge?: boolean };
 
 export function MobileNav({ links, cartLabel, cartCount }: {
   links: NavLink[];
@@ -41,9 +41,18 @@ export function MobileNav({ links, cartLabel, cartCount }: {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="py-3 text-sm text-muted-foreground transition-colors hover:text-foreground border-b border-border last:border-0"
+                className="flex items-center gap-1.5 py-3 text-sm text-muted-foreground transition-colors hover:text-foreground border-b border-border last:border-0"
               >
                 {link.label}
+                {link.badge && (
+                  <span className="flex items-center gap-1">
+                    <span className="relative flex h-1.5 w-1.5">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
+                      <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-red-500" />
+                    </span>
+                    <span className="animate-pulse text-[10px] font-medium text-red-500">진행중</span>
+                  </span>
+                )}
               </Link>
             ))}
             <Link
