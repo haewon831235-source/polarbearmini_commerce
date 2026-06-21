@@ -63,17 +63,6 @@ export default async function HomePage({
       {/* Featured goods */}
       <section className="py-10">
         <h2 className="mb-6 text-2xl font-semibold">{t("featuredTitle")}</h2>
-        {/* Lion King MD 리스트 배너 — 민트 필터 적용 */}
-        <div className="mb-6 overflow-hidden rounded-xl border border-border">
-          <a href="/lion-king-md.png" target="_blank" rel="noopener noreferrer">
-            <img
-              src="/lion-king-md.png"
-              alt="The Lion King Live in Concert — MD 리스트"
-              className="w-full object-contain"
-              style={{ filter: "hue-rotate(135deg) saturate(0.9) brightness(0.97)" }}
-            />
-          </a>
-        </div>
         {featured.length === 0 ? (
           <div className="rounded-lg border border-dashed border-border p-12 text-center text-muted-foreground">
             {t("featuredEmpty")}
