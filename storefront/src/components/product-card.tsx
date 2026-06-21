@@ -50,8 +50,10 @@ export function ProductCard({
               strokeLinejoin="round"
               className="h-7 w-7 text-muted-foreground"
             >
-              <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
-              <circle cx="12" cy="12" r="3" />
+              <g className="pa-eye">
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
+                <circle className="pa-eye-pupil" cx="12" cy="12" r="3" />
+              </g>
             </svg>
             <span className="text-[11px] uppercase tracking-wide text-muted-foreground">
               {label}

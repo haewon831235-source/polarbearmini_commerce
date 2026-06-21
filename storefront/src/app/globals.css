@@ -128,3 +128,64 @@
     @apply font-sans;
   }
 }
+
+/* Cute blinking eye for the "이미지 보기" product-card cover. */
+.pa-eye {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pa-eye-blink 3.4s ease-in-out infinite;
+}
+
+.pa-eye-pupil {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: pa-eye-look 3.4s ease-in-out infinite;
+}
+
+/* A gentle double-blink each cycle. */
+@keyframes pa-eye-blink {
+  0%,
+  82%,
+  100% {
+    transform: scaleY(1);
+  }
+  85% {
+    transform: scaleY(0.1);
+  }
+  88% {
+    transform: scaleY(1);
+  }
+  91% {
+    transform: scaleY(0.1);
+  }
+  94% {
+    transform: scaleY(1);
+  }
+}
+
+/* The pupil looks around between blinks. */
+@keyframes pa-eye-look {
+  0%,
+  18% {
+    transform: translateX(0);
+  }
+  33%,
+  48% {
+    transform: translateX(-1.4px);
+  }
+  63%,
+  78% {
+    transform: translateX(1.4px);
+  }
+  90%,
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pa-eye,
+  .pa-eye-pupil {
+    animation: none;
+  }
+}
