@@ -9,6 +9,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { PostHogProvider } from "@/components/posthog-provider";
 import { TrackProvider } from "@/components/track-provider";
+import { VoiceAssistant } from "@/components/voice-assistant";
 import "../globals.css";
 
 // Latin UI font; CJK glyphs (ko/ja/zh) fall back to system fonts for now.
@@ -61,6 +62,7 @@ export default async function LocaleLayout({
             <SiteHeader />
             <main className="flex-1">{children}</main>
             <SiteFooter />
+            <VoiceAssistant />
           </NextIntlClientProvider>
         </PostHogProvider>
       </body>
