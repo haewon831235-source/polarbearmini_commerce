@@ -25,6 +25,7 @@ interface MockProduct {
   id: string;
   handle: string;
   ipFranchise: string;
+  imageUrl?: string;
   prices: Record<CurrencyCode, number>; // amount_minor
   title: Localized;
   subtitle: Localized;
@@ -117,6 +118,7 @@ const PRODUCTS: MockProduct[] = [
     id: "lk-keyring-simba-nala",
     handle: "lk-keyring-simba-nala",
     ipFranchise: "The Lion King",
+    imageUrl: "/products/lk-keyring-simba-nala.png",
     prices: { KRW: 12000, JPY: 1200, USD: 950, CNY: 6200 },
     title: {
       ko: "라이온 킹 금속키링 - 심바와 날라",
@@ -136,6 +138,7 @@ const PRODUCTS: MockProduct[] = [
     id: "lk-keyring-simba-purple",
     handle: "lk-keyring-simba-purple",
     ipFranchise: "The Lion King",
+    imageUrl: "/products/lk-keyring-simba-purple.png",
     prices: { KRW: 12000, JPY: 1200, USD: 950, CNY: 6200 },
     title: {
       ko: "라이온 킹 금속키링 - 심바와 자주",
@@ -155,6 +158,7 @@ const PRODUCTS: MockProduct[] = [
     id: "lk-coaster",
     handle: "lk-coaster",
     ipFranchise: "The Lion King",
+    imageUrl: "/products/lk-coaster.png",
     prices: { KRW: 9500, JPY: 950, USD: 750, CNY: 4900 },
     title: {
       ko: "라이온 킹 컵받침 코스터",
@@ -174,6 +178,7 @@ const PRODUCTS: MockProduct[] = [
     id: "zootopia2-sticker-pack",
     handle: "zootopia2-sticker-pack",
     ipFranchise: "Zootopia 2",
+    imageUrl: "/products/zootopia2-sticker-pack.png",
     prices: { KRW: 12000, JPY: 1200, USD: 950, CNY: 6200 },
     title: {
       ko: "주토피아2 스티커팩",
@@ -193,6 +198,7 @@ const PRODUCTS: MockProduct[] = [
     id: "zootopia2-memo-set",
     handle: "zootopia2-memo-set",
     ipFranchise: "Zootopia 2",
+    imageUrl: "/products/zootopia2-memo-set.png",
     prices: { KRW: 12000, JPY: 1200, USD: 950, CNY: 6200 },
     title: {
       ko: "주토피아2 메모지 세트",
@@ -212,6 +218,7 @@ const PRODUCTS: MockProduct[] = [
     id: "zootopia2-pouch-judy-nick",
     handle: "zootopia2-pouch-judy-nick",
     ipFranchise: "Zootopia 2",
+    imageUrl: "/products/zootopia2-pouch-judy-nick.png",
     prices: { KRW: 12000, JPY: 1200, USD: 950, CNY: 6200 },
     title: {
       ko: "주토피아2 미니 파우치 - 주디&닉",
@@ -231,6 +238,7 @@ const PRODUCTS: MockProduct[] = [
     id: "zootopia2-l-holder-judy-nick",
     handle: "zootopia2-l-holder-judy-nick",
     ipFranchise: "Zootopia 2",
+    imageUrl: "/products/zootopia2-l-holder-judy-nick.png",
     prices: { KRW: 4000, JPY: 400, USD: 320, CNY: 2000 },
     title: {
       ko: "주토피아2 L홀더 - 주디&닉",
@@ -250,6 +258,7 @@ const PRODUCTS: MockProduct[] = [
     id: "zootopia2-l-holder-all",
     handle: "zootopia2-l-holder-all",
     ipFranchise: "Zootopia 2",
+    imageUrl: "/products/zootopia2-l-holder-all.png",
     prices: { KRW: 4000, JPY: 400, USD: 320, CNY: 2000 },
     title: {
       ko: "주토피아2 L홀더 - 주디&닉&피닉",
@@ -282,6 +291,7 @@ function toListItem(p: MockProduct, locale: string, currency: CurrencyCode): Pro
     title: tr(p.title, locale),
     subtitle: tr(p.subtitle, locale),
     ipFranchise: p.ipFranchise,
+    imageUrl: p.imageUrl,
     price: price(p, currency),
   };
 }

@@ -143,3 +143,13 @@ begin
   on conflict (product_id, currency) do nothing;
 
 end $$;
+
+-- Set product image paths (served from Next.js public/products/)
+update product set image_url = '/products/lk-keyring-simba-nala.png'      where handle = 'lk-keyring-simba-nala';
+update product set image_url = '/products/lk-keyring-simba-purple.png'    where handle = 'lk-keyring-simba-purple';
+update product set image_url = '/products/lk-coaster.png'                  where handle = 'lk-coaster';
+update product set image_url = '/products/zootopia2-sticker-pack.png'     where handle = 'zootopia2-sticker-pack';
+update product set image_url = '/products/zootopia2-memo-set.png'         where handle = 'zootopia2-memo-set';
+update product set image_url = '/products/zootopia2-pouch-judy-nick.png'  where handle = 'zootopia2-pouch-judy-nick';
+update product set image_url = '/products/zootopia2-l-holder-judy-nick.png' where handle = 'zootopia2-l-holder-judy-nick';
+update product set image_url = '/products/zootopia2-l-holder-all.png'     where handle = 'zootopia2-l-holder-all';
