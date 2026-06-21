@@ -86,7 +86,8 @@
     "quantity": "数量",
     "added": "追加しました ✓",
     "comingSoon": "購入機能は準備中",
-    "comingSoonHint": "オンライン購入はまもなく開始します。お問い合わせは下記までお願いします。"
+    "comingSoonHint": "オンライン購入はまもなく開始します。お問い合わせは下記までお願いします。",
+    "revealImage": "画像を見る"
   },
   "Cart": {
     "title": "カート",

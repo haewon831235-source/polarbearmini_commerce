@@ -86,7 +86,8 @@
     "quantity": "数量",
     "added": "已加入 ✓",
     "comingSoon": "购买功能即将上线",
-    "comingSoonHint": "在线购买即将开放。如有需要，请通过下方联系方式与我们联系。"
+    "comingSoonHint": "在线购买即将开放。如有需要，请通过下方联系方式与我们联系。",
+    "revealImage": "查看图片"
   },
   "Cart": {
     "title": "购物车",

@@ -86,7 +86,8 @@
     "quantity": "Quantity",
     "added": "Added ✓",
     "comingSoon": "Purchases coming soon",
-    "comingSoonHint": "Online checkout opens soon. For now, please reach us at the contact below."
+    "comingSoonHint": "Online checkout opens soon. For now, please reach us at the contact below.",
+    "revealImage": "View image"
   },
   "Cart": {
     "title": "Cart",
