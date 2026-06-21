@@ -38,7 +38,7 @@ export function ProductCard({
             type="button"
             onClick={() => setRevealed(true)}
             aria-label={t("revealImage")}
-            className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-muted to-muted-foreground/10 transition-colors hover:from-muted-foreground/10 hover:to-muted-foreground/20"
+            className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-[#eafaf4] to-[#d2f1e6] transition-colors hover:from-[#d2f1e6] hover:to-[#bfe9d8]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
