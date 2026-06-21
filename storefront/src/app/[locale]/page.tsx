@@ -14,9 +14,9 @@ export const dynamic = "force-dynamic";
 // in front for legibility.
 const IP_REFERENCES: { name: string; image?: string }[] = [
   { name: "Attack on Titan", image: "/campaigns/attack-on-titan.jpg" },
-  { name: "Jujutsu Kaisen" },
-  { name: "Final Fantasy" },
-  { name: "The Lion King" },
+  { name: "Jujutsu Kaisen", image: "/campaigns/jujutsu-kaisen.jpg" },
+  { name: "Final Fantasy", image: "/campaigns/final-fantasy.jpg" },
+  { name: "The Lion King", image: "/campaigns/the-lion-king.jpg" },
 ];
 
 export default async function HomePage({
