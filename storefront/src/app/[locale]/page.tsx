@@ -10,11 +10,13 @@ export const dynamic = "force-dynamic";
 
 // Reference IP from the company's real performance portfolio (shown as brand
 // proof). Replace with CMS-driven campaign content in phase A.
-const IP_REFERENCES = [
-  "Attack on Titan",
-  "Jujutsu Kaisen",
-  "Final Fantasy",
-  "The Lion King",
+// `image` (optional) is a key-visual shown behind the title; the label stays
+// in front for legibility.
+const IP_REFERENCES: { name: string; image?: string }[] = [
+  { name: "Attack on Titan", image: "/campaigns/attack-on-titan.jpg" },
+  { name: "Jujutsu Kaisen" },
+  { name: "Final Fantasy" },
+  { name: "The Lion King" },
 ];
 
 export default async function HomePage({
@@ -83,10 +85,23 @@ export default async function HomePage({
         <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
           {IP_REFERENCES.map((ip) => (
             <div
-              key={ip}
-              className="flex aspect-video items-center justify-center rounded-lg border border-border bg-muted/40 p-4 text-center text-sm font-medium"
+              key={ip.name}
+              className="relative flex aspect-video items-center justify-center overflow-hidden rounded-lg border border-border bg-muted/40 bg-cover bg-center p-4 text-center text-sm font-medium"
+              style={
+                ip.image ? { backgroundImage: `url(${ip.image})` } : undefined
+              }
             >
-              {ip}
+              {ip.image ? (
+                <>
+                  {/* Dark scrim keeps the title readable over the key visual. */}
+                  <span className="absolute inset-0 bg-black/45" />
+                  <span className="relative z-10 text-white drop-shadow-md">
+                    {ip.name}
+                  </span>
+                </>
+              ) : (
+                ip.name
+              )}
             </div>
           ))}
         </div>
